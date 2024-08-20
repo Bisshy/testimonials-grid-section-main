@@ -122,7 +122,7 @@ body{
     
     }
 }
-@media screen and (min-width:920px) {
+@media screen and (min-width:1450px) {
     .testimonial__container{
       grid-template-areas:
       "first first first third fourth"
