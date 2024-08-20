@@ -88,12 +88,36 @@ body{
 
 .testimonial__container{
     display:grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+    "one"
+    "third"
+    "second"
+    "fifth"
+    "fourth"
+    ;
     gap:1.5rem;
     width:80%;
     max-width: 1500px;
     margin:1.5em auto;
 }
-@media screen and (min-width:630px) {
+.first__article{
+    grid-area: first;
+}
+.second__article{
+    grid-area:second;
+}
+.third__article{
+    grid-area:third;
+}
+.fourth__article{
+    grid-area:fourth;
+}
+.fifth__article{
+    grid-area: fifth;
+
+}
+@media screen and (min-width:520px) {
     
     .testimonial__container{
       grid-auto-rows: 1fr;
@@ -102,49 +126,16 @@ body{
       "second second fifth"
       "third third fifth"
       "fourth fourth fourth"
-      
-      ;
+       ;
     }
-    .first__article{
-        grid-area: first;
-    }
-    .second__article{
-        grid-area:second;
-    }
-    .third__article{
-        grid-area:third;
-    }
-    .fourth__article{
-        grid-area:fourth;
-    }
-    .fifth__article{
-        grid-area: fifth;
-    
-    }
+   
 }
-@media screen and (min-width:1450px) {
+@media screen and (min-width:40em) {
     .testimonial__container{
       grid-template-areas:
-      "first first first third fourth"
-      "second fifth fifth fifth fourth"
-      
+      "first first third fourth"
+      "second fifth fifth  fourth"
       ;
-    }
-    .first__article{
-        grid-area: first;
-    }
-    .second__article{
-        grid-area:second;
-    }
-    .third__article{
-        grid-area:third;
-    }
-    .fourth__article{
-        grid-area:fourth;
-    }
-    .fifth__article{
-        grid-area: fifth;
-    
     }
 }
 
@@ -181,7 +172,7 @@ body{
     background-color: var(--Very-dark-blackish-blue);
   
 }
-.second__article{
+/* .second__article{
     order:3;
 }
 .third__article{
@@ -193,7 +184,7 @@ body{
 .fifth__article{
     order:4;
 }
-
+ */
 
 
 .article__image{
